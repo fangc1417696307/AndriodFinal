@@ -17,4 +17,7 @@
     <string name="identify_source_deepseek">DeepSeek</string>
     <string name="identify_source_mock">本地模拟</string>
     <string name="identify_offline_fallback">在线识别不可用，已切换到本地模拟</string>
+    <string name="guest_identify_banner">当前为游客模式，登录后识别结果会保存到记录。</string>
+    <string name="guest_identify_login">去登录</string>
+    <string name="identify_login_required">登录后才能识别并保存记录</string>
 </resources>

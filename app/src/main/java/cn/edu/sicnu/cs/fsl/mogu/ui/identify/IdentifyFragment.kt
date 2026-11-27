@@ -1,6 +1,7 @@
 package cn.edu.sicnu.cs.fsl.mogu.ui.identify
 
 import android.Manifest
+import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -19,8 +20,10 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import cn.edu.sicnu.cs.fsl.mogu.R
+import cn.edu.sicnu.cs.fsl.mogu.ServiceLocator
 import cn.edu.sicnu.cs.fsl.mogu.data.model.IdentifyResult
 import cn.edu.sicnu.cs.fsl.mogu.databinding.FragmentIdentifyBinding
+import cn.edu.sicnu.cs.fsl.mogu.ui.auth.LoginActivity
 import cn.edu.sicnu.cs.fsl.mogu.ui.common.PredictionBinder
 import cn.edu.sicnu.cs.fsl.mogu.ui.wiki.MushroomDetailActivity
 import cn.edu.sicnu.cs.fsl.mogu.util.ImageLoader
@@ -39,6 +42,16 @@ class IdentifyFragment : Fragment() {
     private var currentFile: File? = null
     private var pendingCameraFile: File? = null
     private var shownRecordId = 0L
+    private var pendingIdentify = false
+
+    private val loginLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult(),
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK && pendingIdentify) {
+            currentFile?.let { viewModel.identify(it) }
+        }
+        pendingIdentify = false
+    }
 
     private val pickVisualMedia = registerForActivityResult(
         ActivityResultContracts.PickVisualMedia(),
@@ -78,6 +91,17 @@ class IdentifyFragment : Fragment() {
         }
         binding.btnCamera.setOnClickListener { startCamera() }
         binding.btnIdentify.setOnClickListener { startIdentify() }
+        binding.btnIdentifyLogin.setOnClickListener {
+            loginLauncher.launch(Intent(requireContext(), LoginActivity::class.java))
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                ServiceLocator.session.isLoggedInFlow.collect { loggedIn ->
+                    binding.guestBanner.isVisible = !loggedIn
+                }
+            }
+        }
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -160,6 +184,11 @@ class IdentifyFragment : Fragment() {
         val file = currentFile
         if (file == null) {
             toast(getString(R.string.identify_empty_image))
+            return
+        }
+        if (!ServiceLocator.session.isLoggedIn) {
+            pendingIdentify = true
+            loginLauncher.launch(Intent(requireContext(), LoginActivity::class.java))
             return
         }
         viewModel.identify(file)

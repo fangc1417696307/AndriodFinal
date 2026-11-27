@@ -8,4 +8,5 @@
     <string name="feedback_status_pending">待处理</string>
     <string name="feedback_status_handled">已处理</string>
     <string name="feedback_record_tip">关联识别记录：%1$s</string>
+    <string name="feedback_login_required">请先登录后再提交反馈</string>
 </resources>

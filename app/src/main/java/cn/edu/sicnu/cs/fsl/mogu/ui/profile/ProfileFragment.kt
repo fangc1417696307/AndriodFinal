@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import cn.edu.sicnu.cs.fsl.mogu.R
@@ -14,6 +16,7 @@ import cn.edu.sicnu.cs.fsl.mogu.databinding.DialogChangePasswordBinding
 import cn.edu.sicnu.cs.fsl.mogu.databinding.DialogEditProfileBinding
 import cn.edu.sicnu.cs.fsl.mogu.databinding.FragmentProfileBinding
 import cn.edu.sicnu.cs.fsl.mogu.ui.auth.LoginActivity
+import cn.edu.sicnu.cs.fsl.mogu.ui.auth.RegisterActivity
 import cn.edu.sicnu.cs.fsl.mogu.ui.feedback.FeedbackActivity
 import cn.edu.sicnu.cs.fsl.mogu.ui.settings.SettingsActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -24,6 +27,14 @@ import kotlinx.coroutines.withContext
 class ProfileFragment : Fragment() {
     private var _binding: FragmentProfileBinding? = null
     private val binding get() = requireNotNull(_binding)
+
+    private val authLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult(),
+    ) { result ->
+        if (result.resultCode == androidx.appcompat.app.AppCompatActivity.RESULT_OK) {
+            refreshUi()
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,6 +47,15 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.btnGuestLogin.setOnClickListener {
+            authLauncher.launch(Intent(requireContext(), LoginActivity::class.java))
+        }
+        binding.btnGuestRegister.setOnClickListener {
+            authLauncher.launch(Intent(requireContext(), RegisterActivity::class.java))
+        }
+        binding.btnGuestSettings.setOnClickListener {
+            startActivity(Intent(requireContext(), SettingsActivity::class.java))
+        }
         binding.btnEditProfile.setOnClickListener { showEditDialog() }
         binding.btnChangePassword.setOnClickListener { showPasswordDialog() }
         binding.btnFeedback.setOnClickListener {
@@ -52,19 +72,28 @@ class ProfileFragment : Fragment() {
                 .show()
         }
         binding.btnLogout.setOnClickListener { confirmLogout() }
+        refreshUi()
     }
 
     override fun onResume() {
         super.onResume()
-        loadUser()
+        refreshUi()
+    }
+
+    private fun refreshUi() {
+        val loggedIn = ServiceLocator.session.isLoggedIn
+        binding.guestCard.isVisible = !loggedIn
+        binding.contentGroup.isVisible = loggedIn
+        if (loggedIn) loadUser()
     }
 
     private fun loadUser() {
         viewLifecycleOwner.lifecycleScope.launch {
             val user = ServiceLocator.authRepository.currentUser()
             if (user == null) {
-                startActivity(Intent(requireContext(), LoginActivity::class.java))
-                requireActivity().finish()
+                // 本地用户数据异常时退化为游客态，不强制跳登录页。
+                ServiceLocator.session.clear()
+                refreshUi()
                 return@launch
             }
             binding.tvName.text = user.realName
@@ -141,11 +170,8 @@ class ProfileFragment : Fragment() {
             .setNegativeButton(R.string.common_cancel, null)
             .setPositiveButton(R.string.common_logout) { _, _ ->
                 ServiceLocator.authRepository.logout()
-                startActivity(
-                    Intent(requireContext(), LoginActivity::class.java)
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK),
-                )
-                requireActivity().finish()
+                refreshUi()
+                Toast.makeText(requireContext(), R.string.logout_success, Toast.LENGTH_SHORT).show()
             }
             .show()
     }
