@@ -1,0 +1,750 @@
+[
+  {
+    "name": "牛肝菌",
+    "alias": "大脚菇",
+    "categoryCode": "BOLETACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需充分加热后食用",
+    "edibleAdvice": "可炒食、炖汤，避免生食",
+    "content": "牛肝菌科常见食用菌，菌盖呈半球形，菌管黄色。",
+    "morphology": "菌盖半球形至平展，褐色至深褐色，菌管黄色，菌柄粗壮",
+    "distribution": "我国西南、华中、华北等地夏秋季林中常见",
+    "coverImage": "covers/01-boletus-aereus.jpg",
+    "regions": [
+      "SW",
+      "CC",
+      "NC"
+    ],
+    "mushroomId": 1,
+    "categoryName": "牛肝菌科"
+  },
+  {
+    "name": "白毒伞",
+    "alias": "致命鹅膏",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含鹅膏毒肽，误食可致肝肾衰竭，死亡率极高",
+    "edibleAdvice": "严禁食用，发现后请勿采食",
+    "content": "鹅膏科剧毒品种，菌体白色，菌柄有菌环，基部有菌托。",
+    "morphology": "菌体白色，菌盖白色光滑，菌柄具菌环，基部有菌托",
+    "distribution": "广东、广西、四川、云南等地阔叶林中",
+    "coverImage": "covers/02-amanita-exitialis.jpg",
+    "regions": [
+      "SC",
+      "SW"
+    ],
+    "mushroomId": 2,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "鸡油菌",
+    "alias": "黄丝菌",
+    "categoryCode": "CANTHARELLACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，具特殊果香",
+    "edibleAdvice": "可炒食、做汤，避免与相似毒菌混淆",
+    "content": "鸡油菌科，菌盖漏斗形，橙黄色，菌褶延生。",
+    "morphology": "菌盖漏斗形，橙黄色，菌褶延生呈棱脊状",
+    "distribution": "我国东北、华北、西南、华中等林区",
+    "coverImage": "covers/03-cantharellus-cibarius.jpg",
+    "regions": [
+      "NE",
+      "NC",
+      "SW",
+      "CC"
+    ],
+    "mushroomId": 3,
+    "categoryName": "鸡油菌科"
+  },
+  {
+    "name": "平菇",
+    "alias": "侧耳",
+    "categoryCode": "AGARICACEAE",
+    "edibleType": 1,
+    "growthSeason": "全年",
+    "toxicityDesc": "无毒，人工栽培普遍",
+    "edibleAdvice": "可炒食、煮汤，需熟食",
+    "content": "伞菌科，菌盖扇形，菌褶延生至菌柄。",
+    "morphology": "菌盖扇形或半球形，灰白色至灰褐色，菌褶延生",
+    "distribution": "全国广泛栽培，野生见于阔叶树腐木",
+    "coverImage": "covers/04-pleurotus-ostreatus.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 4,
+    "categoryName": "伞菌科"
+  },
+  {
+    "name": "毒蝇伞",
+    "alias": "毒蝇鹅膏",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含蝇蕈素等毒素，误食可致神经症状",
+    "edibleAdvice": "严禁食用",
+    "content": "鹅膏科，菌盖鲜红色带白色斑点，极具辨识度。",
+    "morphology": "菌盖鲜红色并带白色斑点，具菌环和菌托",
+    "distribution": "我国东北、华北、西北、西南的针叶林和阔叶林",
+    "coverImage": "covers/05-amanita-muscaria.jpg",
+    "regions": [
+      "NE",
+      "NC",
+      "NW",
+      "SW"
+    ],
+    "mushroomId": 5,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "香菇",
+    "alias": "冬菇、花菇",
+    "categoryCode": "TRICHOLOMATACEAE",
+    "edibleType": 1,
+    "growthSeason": "全年（栽培）",
+    "toxicityDesc": "无毒，需充分加热",
+    "edibleAdvice": "可炒、炖、煲汤，需熟食",
+    "content": "菌盖褐色，表面常有鳞片，菌肉厚实；人工栽培普遍，也有野生个体。",
+    "morphology": "菌盖褐色，表面常有鳞片，菌肉厚实，菌柄较韧",
+    "distribution": "全国广泛栽培，野生见于阔叶树倒木",
+    "coverImage": "covers/08-lentinula-edodes.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 6,
+    "categoryName": "口蘑科"
+  },
+  {
+    "name": "金针菇",
+    "alias": "毛柄金钱菌",
+    "categoryCode": "TRICHOLOMATACEAE",
+    "edibleType": 1,
+    "growthSeason": "秋冬",
+    "toxicityDesc": "无毒，需熟食；生食可能引起胃肠不适",
+    "edibleAdvice": "常见栽培食用菌，涮煮或炒食，需熟食",
+    "content": "菌柄细长，丛生，菌盖小；人工栽培品种多为白色，野生个体偏黄褐色。",
+    "morphology": "菌盖小，菌柄细长，丛生；栽培品种多为白色，野生个体偏黄褐色",
+    "distribution": "全国栽培，野生见于阔叶树腐木",
+    "coverImage": "covers/09-flammulina-filiformis.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 7,
+    "categoryName": "口蘑科"
+  },
+  {
+    "name": "杏鲍菇",
+    "alias": "刺芹侧耳",
+    "categoryCode": "Pleurotaceae",
+    "edibleType": 1,
+    "growthSeason": "全年（栽培）",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "可煎、炒、烤，需熟食",
+    "content": "菌柄粗壮，菌盖灰褐色，肉质紧实；以人工栽培为主。",
+    "morphology": "菌柄粗壮，菌盖灰褐色，肉质紧实",
+    "distribution": "全国栽培为主",
+    "coverImage": "covers/10-pleurotus-eryngii.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 8,
+    "categoryName": "侧耳科"
+  },
+  {
+    "name": "双孢蘑菇",
+    "alias": "白蘑菇、洋蘑菇",
+    "categoryCode": "AGARICACEAE",
+    "edibleType": 1,
+    "growthSeason": "全年（栽培）",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "常见栽培食用菌，需熟食",
+    "content": "菌盖白色或淡褐色，菌褶成熟后变为褐色；超市常见品种。",
+    "morphology": "菌盖白色至淡褐色，菌褶成熟后变为褐色，菌柄短粗",
+    "distribution": "全国栽培",
+    "coverImage": "covers/11-agaricus-bisporus.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 9,
+    "categoryName": "伞菌科"
+  },
+  {
+    "name": "松茸",
+    "alias": "松口蘑、松蕈",
+    "categoryCode": "TRICHOLOMATACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食；注意与有毒口蘑区分",
+    "edibleAdvice": "可炖汤、煎烤，需熟食",
+    "content": "菌盖褐色，具特殊香气，与松树等针叶树共生；野生资源珍贵。",
+    "morphology": "菌盖褐色，菌柄粗壮并具菌环，有特殊香气",
+    "distribution": "东北、西南、华北等针叶林，与松树等共生",
+    "coverImage": "covers/12-tricholoma-matsutake.jpg",
+    "regions": [
+      "NE",
+      "SW",
+      "NC"
+    ],
+    "mushroomId": 10,
+    "categoryName": "口蘑科"
+  },
+  {
+    "name": "茶树菇",
+    "alias": "茶薪菇",
+    "categoryCode": "STROPHARIACEAE",
+    "edibleType": 1,
+    "growthSeason": "春夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "可炒食、炖汤，需熟食",
+    "content": "菌盖褐色，菌柄细长，丛生于阔叶树腐木；人工栽培普遍。",
+    "morphology": "菌盖褐色，菌柄细长，丛生于腐木",
+    "distribution": "全国栽培，野生见于阔叶树腐木",
+    "coverImage": "covers/13-cyclocybe-cylindracea.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 11,
+    "categoryName": "球盖菇科"
+  },
+  {
+    "name": "鸡腿菇",
+    "alias": "毛头鬼伞",
+    "categoryCode": "COPRINACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "幼嫩时可食，必须充分煮熟；已自溶或变质的个体不可食用",
+    "edibleAdvice": "只采食幼嫩个体，需充分煮熟，不要采食发黑自溶的个体",
+    "content": "幼时菌盖呈圆柱形、形似鸡腿，成熟后菌盖自溶成墨汁状；常见于草地、腐殖土。",
+    "morphology": "幼时菌盖圆柱形、形似鸡腿，成熟后菌盖自溶成墨汁状",
+    "distribution": "全国草地、腐殖土、路边和堆肥处",
+    "coverImage": "covers/14-coprinus-comatus.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 12,
+    "categoryName": "鬼伞科"
+  },
+  {
+    "name": "羊肚菌",
+    "alias": "羊肚菜",
+    "categoryCode": "MORCHELLACEAE",
+    "edibleType": 1,
+    "growthSeason": "春季",
+    "toxicityDesc": "生食有毒，必须充分加热",
+    "edibleAdvice": "需彻底煮熟，避免生食",
+    "content": "菌盖表面呈蜂窝状凹坑，形似羊肚；春季发生于林地、果园。",
+    "morphology": "菌盖表面呈蜂窝状凹坑，形似羊肚，菌柄中空",
+    "distribution": "全国春季林地、果园和河岸",
+    "coverImage": "covers/15-morchella-esculenta.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 13,
+    "categoryName": "羊肚菌科"
+  },
+  {
+    "name": "木耳",
+    "alias": "黑木耳",
+    "categoryCode": "AURICULARIACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需泡发后煮熟",
+    "edibleAdvice": "泡发后煮熟食用，不可长时间浸泡后生食",
+    "content": "子实体耳状、胶质，生于阔叶树腐木；干品需泡发后烹饪。",
+    "morphology": "子实体耳状、胶质，红褐色至黑褐色，干后收缩变硬",
+    "distribution": "全国阔叶树腐木，广泛栽培",
+    "coverImage": "covers/16-auricularia-auricula-judae.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 14,
+    "categoryName": "木耳科"
+  },
+  {
+    "name": "猴头菇",
+    "alias": "猴头菌",
+    "categoryCode": "HERICIACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "可炖汤、炒食，需熟食",
+    "content": "子实体白色，菌刺下垂，形似猴头；多生于阔叶树腐木。",
+    "morphology": "子实体白色，菌刺下垂，形似猴头",
+    "distribution": "东北、华北、西南等地阔叶树腐木",
+    "coverImage": "covers/17-hericium-erinaceus.jpg",
+    "regions": [
+      "NE",
+      "NC",
+      "SW"
+    ],
+    "mushroomId": 15,
+    "categoryName": "猴头菌科"
+  },
+  {
+    "name": "豹斑鹅膏",
+    "alias": "豹斑毒伞",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含异鹅膏氨酸等毒素，误食可致神经症状、幻觉甚至昏迷",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖褐色带白色斑点，具菌环和菌托；与多种可食菌外形相近，极易误采。",
+    "morphology": "菌盖褐色带白色斑点，具菌环和菌托",
+    "distribution": "全国针叶林和阔叶林",
+    "coverImage": "covers/18-amanita-pantherina.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 16,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "毒伞",
+    "alias": "毒鹅膏、绿帽菌",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含鹅膏毒肽，误食可致肝肾衰竭，死亡率极高",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖黄绿色至橄榄绿色，具菌环和菌托；是造成致命中毒的主要种类之一。",
+    "morphology": "菌盖黄绿色至橄榄绿色，具菌环和菌托，菌褶白色",
+    "distribution": "我国南方及西南地区阔叶林",
+    "coverImage": "covers/19-amanita-phalloides.jpg",
+    "regions": [
+      "SC",
+      "SW"
+    ],
+    "mushroomId": 17,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "毒粉褶菌",
+    "alias": "土生粉褶菌",
+    "categoryCode": "ENTOLOMATACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "误食可致严重胃肠炎，伴恶心、呕吐、腹泻",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖灰白色至浅褐色，菌褶成熟后呈粉红色；常生于林地、草地。",
+    "morphology": "菌盖灰白色至浅褐色，菌褶成熟后呈粉红色",
+    "distribution": "全国林地、草地和林缘",
+    "coverImage": "covers/20-entoloma-sinuatum.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 18,
+    "categoryName": "粉褶菌科"
+  },
+  {
+    "name": "鹿花菌",
+    "alias": "假羊肚菌",
+    "categoryCode": "HELVELLACEAE",
+    "edibleType": 2,
+    "growthSeason": "春季",
+    "toxicityDesc": "含鹿花菌素，即使煮熟也可能中毒，可致肝损伤和神经系统症状",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖呈脑状皱褶，红褐色至深褐色，外形易与羊肚菌混淆。",
+    "morphology": "菌盖呈脑状皱褶，红褐色至深褐色，菌柄粗短",
+    "distribution": "北方及西南针叶林，春季发生",
+    "coverImage": "covers/21-gyromitra-esculenta.jpg",
+    "regions": [
+      "NC",
+      "SW"
+    ],
+    "mushroomId": 19,
+    "categoryName": "马鞍菌科"
+  },
+  {
+    "name": "亚稀褶红菇",
+    "alias": "亚稀褶黑菇",
+    "categoryCode": "RUSSULACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含剧毒成分，可致横纹肌溶解，死亡率高",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖灰褐色，菌肉受伤后变红，菌褶较稀；与部分可食红菇外形相近。",
+    "morphology": "菌盖灰褐色，菌肉受伤后变红，菌褶较稀",
+    "distribution": "长江以南及西南地区林地",
+    "coverImage": "covers/22-russula-subnigricans.jpg",
+    "regions": [
+      "SC",
+      "SW",
+      "CC"
+    ],
+    "mushroomId": 20,
+    "categoryName": "红菇科"
+  },
+  {
+    "name": "灰花纹鹅膏",
+    "alias": "灰花纹毒伞",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含鹅膏毒肽，剧毒；误食可致肝肾衰竭，死亡率高",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖灰褐色至黑褐色，表面有花纹，具菌环和菌托；四川、湖南、江西等地常见。",
+    "morphology": "菌盖灰褐色至黑褐色，表面有花纹，具菌环和菌托",
+    "distribution": "四川、湖南、江西、广西等地",
+    "coverImage": "covers/23-amanita-fuliginea.jpg",
+    "regions": [
+      "SW",
+      "CC",
+      "SC"
+    ],
+    "mushroomId": 21,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "裂皮鹅膏",
+    "alias": "裂皮毒伞",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含鹅膏毒肽，剧毒；误食可致肝肾衰竭",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖白色，中央表皮裂开，具菌环和菌托；常与可食菌混生。",
+    "morphology": "菌盖白色，中央表皮裂开，具菌环和菌托",
+    "distribution": "四川、云南、贵州等地",
+    "coverImage": "covers/24-amanita-rimosa.jpg",
+    "regions": [
+      "SW"
+    ],
+    "mushroomId": 22,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "假褐云斑鹅膏",
+    "alias": "假褐云斑毒伞",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含鹅膏毒肽，误食可致肝肾损伤",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖褐色带云斑状鳞片，具菌环和菌托；外形易与可食鹅膏混淆。",
+    "morphology": "菌盖褐色带云斑状鳞片，具菌环和菌托",
+    "distribution": "我国南方及西南地区",
+    "coverImage": "covers/25-amanita-pseudoporphyria.jpg",
+    "regions": [
+      "SC",
+      "SW"
+    ],
+    "mushroomId": 23,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "黄盖鹅膏",
+    "alias": "黄盖毒伞",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含鹅膏毒肽，剧毒；误食可致肝肾衰竭",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖黄色至黄褐色，具菌环和菌托；四川、云南等地有分布。",
+    "morphology": "菌盖黄色至黄褐色，具菌环和菌托",
+    "distribution": "四川、云南、贵州等地",
+    "coverImage": "covers/26-amanita-subjunquillea.jpg",
+    "regions": [
+      "SW"
+    ],
+    "mushroomId": 24,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "淡红鹅膏",
+    "alias": "淡红毒伞",
+    "categoryCode": "AMANITACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "有毒，含鹅膏毒肽，误食可致肝肾损伤",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖淡红色至粉红色，具菌环和菌托；与部分可食鹅膏外形相近。",
+    "morphology": "菌盖淡红色至粉红色，具菌环和菌托",
+    "distribution": "四川、云南等地",
+    "coverImage": "covers/27-amanita-pallidorosea.jpg",
+    "regions": [
+      "SW"
+    ],
+    "mushroomId": 25,
+    "categoryName": "鹅膏科"
+  },
+  {
+    "name": "大青褶伞",
+    "alias": "绿褶菇",
+    "categoryCode": "AGARICACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "主要引起胃肠炎型中毒，误食后恶心、呕吐、腹泻",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖白色带褐色鳞片，菌褶成熟后呈青绿色；常见于草地、花坛、路边。",
+    "morphology": "菌盖白色带褐色鳞片，菌褶成熟后呈青绿色",
+    "distribution": "全国草地、花坛、路边，南方更常见",
+    "coverImage": "covers/28-chlorophyllum-molybdites.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 26,
+    "categoryName": "伞菌科"
+  },
+  {
+    "name": "肉褐鳞环柄菇",
+    "alias": "肉褐鳞小伞",
+    "categoryCode": "AGARICACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "含鹅膏毒肽，剧毒；个体虽小但可致命",
+    "edibleAdvice": "严禁食用",
+    "content": "菌盖褐色带鳞片，菌环不明显；小型菌，常被误认为普通野菇。",
+    "morphology": "菌盖褐色带鳞片，菌环不明显，个体较小",
+    "distribution": "全国草地、林缘和路旁",
+    "coverImage": "covers/29-lepiota-brunneoincarnata.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 27,
+    "categoryName": "伞菌科"
+  },
+  {
+    "name": "秋生盔孢伞",
+    "alias": "秋生盔孢菌",
+    "categoryCode": "HYMENOGASTRACEAE",
+    "edibleType": 2,
+    "growthSeason": "秋季",
+    "toxicityDesc": "含鹅膏毒肽，剧毒；误食可致肝肾衰竭",
+    "edibleAdvice": "严禁食用",
+    "content": "小型褐色菌，生于腐木，常与可食菌混生；是木生菌中常见的致命种。",
+    "morphology": "小型褐色菌，菌盖钟形至平展，菌环不明显",
+    "distribution": "全国腐木上，秋季常见",
+    "coverImage": "covers/30-galerina-marginata.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 28,
+    "categoryName": "膜腹菌科"
+  },
+  {
+    "name": "墨汁鬼伞",
+    "alias": "鬼盖",
+    "categoryCode": "COPRINACEAE",
+    "edibleType": 2,
+    "growthSeason": "春夏季",
+    "toxicityDesc": "含鬼伞素，与酒精同食可致双硫仑样反应，出现心悸、恶心、面红等",
+    "edibleAdvice": "不建议食用，尤其饮酒前后",
+    "content": "菌盖灰褐色，成熟后自溶成墨汁状；常见于草地、堆肥和腐木旁。",
+    "morphology": "菌盖灰褐色，成熟后自溶成墨汁状，菌褶密集",
+    "distribution": "全国草地、堆肥和腐木旁",
+    "coverImage": "covers/31-coprinopsis-atramentaria.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 29,
+    "categoryName": "鬼伞科"
+  },
+  {
+    "name": "簇生沿丝伞",
+    "alias": "簇生黄韧伞",
+    "categoryCode": "STROPHARIACEAE",
+    "edibleType": 2,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "有毒，误食可致恶心、呕吐、腹泻等胃肠症状",
+    "edibleAdvice": "严禁食用",
+    "content": "小型黄色菌，丛生于腐木；与部分可食木生菌容易混淆。",
+    "morphology": "小型黄色菌，菌盖半球形，丛生于腐木",
+    "distribution": "全国阔叶树和针叶树腐木",
+    "coverImage": "covers/32-hypholoma-fasciculare.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 30,
+    "categoryName": "球盖菇科"
+  },
+  {
+    "name": "草菇",
+    "alias": "兰花菇",
+    "categoryCode": "AGARICACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "常见栽培食用菌，需充分煮熟",
+    "content": "菌盖钟形、灰褐色，基部有菌托；南方栽培普遍。",
+    "morphology": "菌盖钟形、灰褐色，基部有菌托，菌柄短",
+    "distribution": "华南、华东栽培为主",
+    "coverImage": "covers/33-volvariella-volvacea.jpg",
+    "regions": [
+      "SC",
+      "EC"
+    ],
+    "mushroomId": 31,
+    "categoryName": "伞菌科"
+  },
+  {
+    "name": "口蘑",
+    "alias": "白蘑",
+    "categoryCode": "TRICHOLOMATACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "可炒食、炖汤，需熟食",
+    "content": "菌盖白色至淡黄色，菌肉厚实；北方草原和针叶林常见。",
+    "morphology": "菌盖白色至淡黄色，菌肉厚实，菌柄粗短",
+    "distribution": "内蒙古、河北、东北等草原和针叶林",
+    "coverImage": null,
+    "regions": [
+      "NC",
+      "NE"
+    ],
+    "mushroomId": 32,
+    "categoryName": "口蘑科"
+  },
+  {
+    "name": "榛蘑",
+    "alias": "蜜环菌",
+    "categoryCode": "PHYSALACRIACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "可炖鸡、炒食，需熟食",
+    "content": "丛生于阔叶树或针叶树腐木，菌盖蜜黄色；东北地区常见。",
+    "morphology": "菌盖蜜黄色，表面有细鳞片，丛生于腐木，具菌环",
+    "distribution": "东北、华北、西南等阔叶树和针叶树腐木",
+    "coverImage": "covers/35-armillaria-mellea.jpg",
+    "regions": [
+      "NE",
+      "NC",
+      "SW"
+    ],
+    "mushroomId": 33,
+    "categoryName": "膨瑚菌科"
+  },
+  {
+    "name": "竹荪",
+    "alias": "竹笙",
+    "categoryCode": "PHALLACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "常见于汤品，需煮熟",
+    "content": "菌柄顶端有白色网状菌裙，形似纱裙；多生于竹林腐殖土。",
+    "morphology": "菌柄顶端有白色网状菌裙，形似纱裙，菌盖钟形",
+    "distribution": "华南、西南竹林腐殖土",
+    "coverImage": "covers/36-phallus-indusiatus.jpg",
+    "regions": [
+      "SC",
+      "SW"
+    ],
+    "mushroomId": 34,
+    "categoryName": "鬼笔科"
+  },
+  {
+    "name": "银耳",
+    "alias": "白木耳",
+    "categoryCode": "TREMELLACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需煮熟",
+    "edibleAdvice": "泡发后煮熟食用，避免长时间浸泡后生食",
+    "content": "子实体胶质、白色，呈花朵状；以人工栽培为主。",
+    "morphology": "子实体胶质、白色，呈花朵状，干后收缩",
+    "distribution": "全国栽培，野生见于阔叶树腐木",
+    "coverImage": "covers/37-tremella-fuciformis.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 35,
+    "categoryName": "银耳科"
+  },
+  {
+    "name": "蟹味菇",
+    "alias": "真姬菇、玉蕈",
+    "categoryCode": "LYOPHYLLACEAE",
+    "edibleType": 1,
+    "growthSeason": "全年（栽培）",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "常见栽培食用菌，需熟食",
+    "content": "菌盖小、灰褐色，菌柄细长，丛生；口感脆嫩。",
+    "morphology": "菌盖小、灰褐色，菌柄细长，丛生",
+    "distribution": "全国栽培",
+    "coverImage": "covers/38-hypsizygus-marmoreus.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 36,
+    "categoryName": "离褶伞科"
+  },
+  {
+    "name": "鸡枞菌",
+    "alias": "伞把菇",
+    "categoryCode": "LYOPHYLLACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "可炒食、炖汤，需熟食",
+    "content": "菌柄粗壮、基部尖，与白蚁巢共生；野生，西南地区常见。",
+    "morphology": "菌柄粗壮、基部尖，菌盖中央有凸起，与白蚁巢共生",
+    "distribution": "云南、四川、贵州、广西等南方地区",
+    "coverImage": "covers/39-termitomyces-heimii.jpg",
+    "regions": [
+      "SW",
+      "SC"
+    ],
+    "mushroomId": 37,
+    "categoryName": "离褶伞科"
+  },
+  {
+    "name": "松乳菇",
+    "alias": "松树菌、谷熟菌",
+    "categoryCode": "RUSSULACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "可炒食、炖汤，需熟食",
+    "content": "菌盖橙黄色，受伤后变绿，与松树共生；西南地区常见。",
+    "morphology": "菌盖橙黄色，受伤后变绿，菌褶延生，菌柄中空",
+    "distribution": "东北、华北、西南的松林",
+    "coverImage": "covers/40-lactarius-deliciosus.jpg",
+    "regions": [
+      "NE",
+      "NC",
+      "SW"
+    ],
+    "mushroomId": 38,
+    "categoryName": "红菇科"
+  },
+  {
+    "name": "青头菌",
+    "alias": "变绿红菇",
+    "categoryCode": "RUSSULACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，需熟食",
+    "edibleAdvice": "可炒食、炖汤，需熟食",
+    "content": "菌盖绿色，表皮易剥离，菌肉白色；云南、四川常见。",
+    "morphology": "菌盖绿色，表皮易剥离，菌肉白色，菌柄粗短",
+    "distribution": "云南、四川、贵州等南方林地",
+    "coverImage": "covers/41-russula-virescens.jpg",
+    "regions": [
+      "SW"
+    ],
+    "mushroomId": 39,
+    "categoryName": "红菇科"
+  },
+  {
+    "name": "美味牛肝菌",
+    "alias": "白牛肝菌",
+    "categoryCode": "BOLETACEAE",
+    "edibleType": 1,
+    "growthSeason": "夏秋季",
+    "toxicityDesc": "无毒，必须充分煮熟；见手青类牛肝菌未熟透可致中毒",
+    "edibleAdvice": "必须彻底加热，避免生食或半生食",
+    "content": "菌盖褐色，菌管黄色，菌柄粗壮；牛肝菌科常见食用种。",
+    "morphology": "菌盖褐色，菌管黄色，菌柄粗壮，菌肉白色",
+    "distribution": "全国针叶林和阔叶林，夏秋季",
+    "coverImage": "covers/42-boletus-edulis.jpg",
+    "regions": [
+      "NATIONAL"
+    ],
+    "mushroomId": 40,
+    "categoryName": "牛肝菌科"
+  }
+]

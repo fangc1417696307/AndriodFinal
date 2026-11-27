@@ -1,0 +1,13 @@
+<resources>
+    <string name="settings_title">识别设置</string>
+    <string name="settings_api_key">DeepSeek API Key</string>
+    <string name="settings_api_key_hint">sk-…（只保存在本机，不会上传）</string>
+    <string name="settings_api_key_save">保存</string>
+    <string name="settings_mode">识别模式</string>
+    <string name="settings_mode_online">在线识别</string>
+    <string name="settings_mode_offline">本地模拟</string>
+    <string name="settings_mode_hint">在线识别失败或未配置 Key 时，会自动使用本地模拟。</string>
+    <string name="settings_saved">设置已保存</string>
+    <string name="settings_key_missing">未配置 API Key，将使用本地模拟识别</string>
+    <string name="settings_model">模型：deepseek-flash</string>
+</resources>

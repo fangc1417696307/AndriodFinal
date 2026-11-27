@@ -1,0 +1,18 @@
+<resources>
+    <string name="records_title">我的识别记录</string>
+    <string name="records_subtitle">收藏、回看每一次识别结果</string>
+    <string name="records_empty">还没有识别记录，去识别一张吧</string>
+    <string name="records_favorite">收藏</string>
+    <string name="records_unfavorite">取消收藏</string>
+    <string name="records_delete_title">删除记录</string>
+    <string name="records_delete_message">删除后不可恢复，确定删除这条记录吗？</string>
+    <string name="records_delete_success">记录已删除</string>
+    <string name="records_detail_title">识别记录详情</string>
+    <string name="records_review_status">审核状态</string>
+    <string name="records_review_pending">待审核</string>
+    <string name="records_review_approved">审核通过</string>
+    <string name="records_review_rejected">审核驳回</string>
+    <string name="records_top3">Top3 候选</string>
+    <string name="records_source">识别来源</string>
+    <string name="records_feedback">反馈识别结果</string>
+</resources>

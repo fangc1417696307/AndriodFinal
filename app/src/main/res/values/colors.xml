@@ -2,4 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="mogu_green">#FF2E7D32</color>
+    <color name="mogu_green_dark">#FF1B5E20</color>
+    <color name="mogu_green_light">#FFE8F5E9</color>
+    <color name="mogu_amber">#FFF9A825</color>
+    <color name="mogu_amber_light">#FFFFF8E1</color>
+    <color name="mogu_red">#FFC62828</color>
+    <color name="mogu_red_light">#FFFDECEA</color>
+    <color name="mogu_bg">#FFF6F7F4</color>
+    <color name="mogu_surface">#FFFFFFFF</color>
+    <color name="mogu_text_primary">#FF1F2A22</color>
+    <color name="mogu_text_secondary">#FF6B726C</color>
+    <color name="mogu_divider">#FFE3E7E2</color>
+    <color name="mogu_placeholder">#FFEDEFEC</color>
 </resources>

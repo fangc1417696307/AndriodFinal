@@ -1,0 +1,63 @@
+package cn.edu.sicnu.cs.fsl.mogu.ui.auth
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import cn.edu.sicnu.cs.fsl.mogu.R
+import cn.edu.sicnu.cs.fsl.mogu.ServiceLocator
+import cn.edu.sicnu.cs.fsl.mogu.databinding.ActivityRegisterBinding
+import cn.edu.sicnu.cs.fsl.mogu.ui.main.MainActivity
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+
+class RegisterActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityRegisterBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnRegister.setOnClickListener { register() }
+        binding.tvGoLogin.setOnClickListener { finish() }
+    }
+
+    private fun register() {
+        val username = binding.etUsername.text?.toString().orEmpty()
+        val password = binding.etPassword.text?.toString().orEmpty()
+        val confirm = binding.etConfirm.text?.toString().orEmpty()
+        val realName = binding.etRealName.text?.toString().orEmpty()
+        val phone = binding.etPhone.text?.toString()?.takeIf { it.isNotBlank() }
+
+        if (password != confirm) {
+            Toast.makeText(this, R.string.register_error_confirm, Toast.LENGTH_SHORT).show()
+            return
+        }
+        binding.progress.visibility = android.view.View.VISIBLE
+        binding.btnRegister.isEnabled = false
+        lifecycleScope.launch {
+            val result = withContext(Dispatchers.IO) {
+                ServiceLocator.authRepository.register(username, password, realName, phone)
+            }
+            binding.progress.visibility = android.view.View.GONE
+            binding.btnRegister.isEnabled = true
+            result.onSuccess {
+                Toast.makeText(this@RegisterActivity, R.string.register_success, Toast.LENGTH_SHORT).show()
+                startActivity(
+                    Intent(this@RegisterActivity, MainActivity::class.java)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK),
+                )
+                finish()
+            }.onFailure {
+                Toast.makeText(
+                    this@RegisterActivity,
+                    it.message ?: getString(R.string.register_error_username),
+                    Toast.LENGTH_SHORT,
+                ).show()
+            }
+        }
+    }
+}

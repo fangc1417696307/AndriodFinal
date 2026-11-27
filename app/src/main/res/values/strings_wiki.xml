@@ -1,0 +1,18 @@
+<resources>
+    <string name="wiki_title">蘑菇图鉴</string>
+    <string name="wiki_subtitle">按名称、别名搜索，先认清再靠近</string>
+    <string name="wiki_search_hint">搜索名称或别名</string>
+    <string name="wiki_all">全部</string>
+    <string name="wiki_edible">可食用</string>
+    <string name="wiki_toxic">有毒</string>
+    <string name="wiki_detail_title">品种详情</string>
+    <string name="wiki_alias">别名</string>
+    <string name="wiki_category">分类</string>
+    <string name="wiki_season">生长季节</string>
+    <string name="wiki_morphology">形态特征</string>
+    <string name="wiki_distribution">分布区域</string>
+    <string name="wiki_toxicity">毒性说明</string>
+    <string name="wiki_advice">食用建议</string>
+    <string name="wiki_content">补充说明</string>
+    <string name="wiki_no_result">没有找到符合条件的品种</string>
+</resources>

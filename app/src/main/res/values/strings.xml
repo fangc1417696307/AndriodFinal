@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">mogu</string>
+    <string name="app_name">Mogu 蘑菇识别</string>
+
+    <string name="common_loading">加载中…</string>
+    <string name="common_retry">重试</string>
+    <string name="common_empty">暂无数据</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_save">保存</string>
+    <string name="common_back">返回</string>
+    <string name="common_search">搜索</string>
+    <string name="common_delete">删除</string>
+    <string name="common_logout">退出登录</string>
+
+    <string name="nav_identify">识别</string>
+    <string name="nav_wiki">图鉴</string>
+    <string name="nav_local">本地</string>
+    <string name="nav_records">记录</string>
+    <string name="nav_profile">我的</string>
+
+    <string name="disclaimer">识别结果仅供参考，切勿据此采食野生菌。</string>
 </resources>

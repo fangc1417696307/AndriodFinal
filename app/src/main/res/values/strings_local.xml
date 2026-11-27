@@ -1,0 +1,11 @@
+<resources>
+    <string name="local_title">本地菌讯</string>
+    <string name="local_subtitle">按所在地区看看当地常见的可食用菌和需要警惕的毒菌。</string>
+    <string name="local_select_region">选择地区</string>
+    <string name="local_change_region">切换地区</string>
+    <string name="local_no_region">先选择你所在的省份</string>
+    <string name="local_edible">本地可食用菌</string>
+    <string name="local_toxic">本地有毒菌 · 避险</string>
+    <string name="local_empty">该地区暂无收录品种</string>
+    <string name="local_region_format">%1$s · %2$s</string>
+</resources>

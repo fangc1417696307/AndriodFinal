@@ -1,0 +1,20 @@
+<resources>
+    <string name="profile_title">个人中心</string>
+    <string name="profile_username">用户名</string>
+    <string name="profile_name">姓名</string>
+    <string name="profile_phone">手机号</string>
+    <string name="profile_edit">编辑资料</string>
+    <string name="profile_change_password">修改密码</string>
+    <string name="profile_feedback">意见反馈</string>
+    <string name="profile_settings">识别设置</string>
+    <string name="profile_about">关于</string>
+    <string name="profile_logout">退出登录</string>
+    <string name="profile_save_success">资料已保存</string>
+    <string name="profile_password_old">原密码</string>
+    <string name="profile_password_new">新密码</string>
+    <string name="profile_password_confirm">确认新密码</string>
+    <string name="profile_password_mismatch">两次输入的新密码不一致</string>
+    <string name="profile_password_success">密码已修改</string>
+    <string name="profile_password_error">原密码不正确</string>
+    <string name="profile_about_text">Mogu 蘑菇识别 v1.0\n课程设计项目，识别结果仅供参考，请勿采食野生菌。</string>
+</resources>

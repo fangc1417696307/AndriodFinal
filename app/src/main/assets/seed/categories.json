@@ -1,0 +1,116 @@
+[
+  {
+    "code": "BOLETACEAE",
+    "name": "牛肝菌科",
+    "sort": 1,
+    "remark": "菌柄粗壮，菌盖肉质，多有菌管"
+  },
+  {
+    "code": "AGARICACEAE",
+    "name": "伞菌科",
+    "sort": 2,
+    "remark": "菌褶明显，包含常见食用菌"
+  },
+  {
+    "code": "AMANITACEAE",
+    "name": "鹅膏科",
+    "sort": 3,
+    "remark": "含多种剧毒品种，识别需谨慎"
+  },
+  {
+    "code": "CANTHARELLACEAE",
+    "name": "鸡油菌科",
+    "sort": 4,
+    "remark": "漏斗状，常见于林地"
+  },
+  {
+    "code": "TRICHOLOMATACEAE",
+    "name": "口蘑科",
+    "sort": 5,
+    "remark": "菌褶明显，包含香菇、松茸等常见食用菌"
+  },
+  {
+    "code": "Pleurotaceae",
+    "name": "侧耳科",
+    "sort": 6,
+    "remark": "菌盖偏生或侧生，多为木腐菌"
+  },
+  {
+    "code": "STROPHARIACEAE",
+    "name": "球盖菇科",
+    "sort": 7,
+    "remark": "包含茶树菇等，部分种类有毒"
+  },
+  {
+    "code": "COPRINACEAE",
+    "name": "鬼伞科",
+    "sort": 8,
+    "remark": "成熟后菌盖自溶成墨汁状"
+  },
+  {
+    "code": "MORCHELLACEAE",
+    "name": "羊肚菌科",
+    "sort": 9,
+    "remark": "菌盖蜂窝状，春季发生"
+  },
+  {
+    "code": "AURICULARIACEAE",
+    "name": "木耳科",
+    "sort": 10,
+    "remark": "胶质耳状，常见于腐木"
+  },
+  {
+    "code": "HERICIACEAE",
+    "name": "猴头菌科",
+    "sort": 11,
+    "remark": "菌刺下垂，形似猴头"
+  },
+  {
+    "code": "ENTOLOMATACEAE",
+    "name": "粉褶菌科",
+    "sort": 12,
+    "remark": "菌褶成熟后呈粉红色，含毒种"
+  },
+  {
+    "code": "HELVELLACEAE",
+    "name": "马鞍菌科",
+    "sort": 13,
+    "remark": "菌盖脑状或马鞍状，含毒种"
+  },
+  {
+    "code": "RUSSULACEAE",
+    "name": "红菇科",
+    "sort": 14,
+    "remark": "菌肉脆，部分种类剧毒"
+  },
+  {
+    "code": "PHALLACEAE",
+    "name": "鬼笔科",
+    "sort": 15,
+    "remark": "菌柄顶端有网状菌裙，常见竹荪"
+  },
+  {
+    "code": "TREMELLACEAE",
+    "name": "银耳科",
+    "sort": 16,
+    "remark": "胶质子实体，常见银耳"
+  },
+  {
+    "code": "LYOPHYLLACEAE",
+    "name": "离褶伞科",
+    "sort": 17,
+    "remark": "包含鸡枞、真姬菇等"
+  },
+  {
+    "code": "HYMENOGASTRACEAE",
+    "name": "膜腹菌科",
+    "sort": 18,
+    "remark": "包含盔孢伞等含鹅膏毒肽的小型菌"
+  },
+  {
+    "code": "PHYSALACRIACEAE",
+    "name": "膨瑚菌科",
+    "sort": 19,
+    "remark": "包含蜜环菌（榛蘑）等"
+  }
+]

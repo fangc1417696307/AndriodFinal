@@ -1,15 +1,48 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+ # ---------- Gradle / 构建产物 ----------
+  .gradle/
+  .kotlin/
+  build/
+  /captures/
+  .externalNativeBuild/
+  .cxx/
+  *.apk
+  *.aab
+  *.ap_
+  *.dex
+  *.class
+
+  # ---------- Android Studio / IntelliJ ----------
+  .idea/
+  *.iml
+  *.ipr
+  *.iws
+  out/
+
+  # ---------- 本地配置（不要提交） ----------
+  local.properties
+  keystore.properties
+  signing.properties
+  secrets.properties
+
+  # ---------- 签名文件 ----------
+  *.jks
+  *.keystore
+  *.p12
+
+  # ---------- 日志 / 崩溃 ----------
+  *.log
+  *.hprof
+  hs_err_pid*
+  replay_pid*
+
+  # ---------- 系统 / 编辑器 ----------
+  .DS_Store
+  Thumbs.db
+  desktop.ini
+  .vscode/
+  .fleet/
+  .history/
+
+  # ---------- 环境变量 ----------
+  .env
+  .env.*

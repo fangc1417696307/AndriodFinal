@@ -1,0 +1,11 @@
+<resources>
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_hint">遇到识别错误、页面问题或有功能建议，都可以写在这里</string>
+    <string name="feedback_submit">提交反馈</string>
+    <string name="feedback_history">我的反馈</string>
+    <string name="feedback_empty">还没有提交过反馈</string>
+    <string name="feedback_success">反馈已提交</string>
+    <string name="feedback_status_pending">待处理</string>
+    <string name="feedback_status_handled">已处理</string>
+    <string name="feedback_record_tip">关联识别记录：%1$s</string>
+</resources>

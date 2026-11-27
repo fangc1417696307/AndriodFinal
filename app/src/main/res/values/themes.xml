@@ -1,8 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.Mogu" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/mogu_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/mogu_green_light</item>
+        <item name="colorOnPrimaryContainer">@color/mogu_green_dark</item>
+        <item name="colorSecondary">@color/mogu_amber</item>
+        <item name="colorOnSecondary">@color/mogu_text_primary</item>
+        <item name="colorSecondaryContainer">@color/mogu_green_light</item>
+        <item name="colorOnSecondaryContainer">@color/mogu_green_dark</item>
+        <item name="colorSurface">@color/mogu_surface</item>
+        <item name="colorOnSurface">@color/mogu_text_primary</item>
+        <item name="android:colorBackground">@color/mogu_bg</item>
+        <item name="android:statusBarColor">@color/mogu_bg</item>
+        <item name="android:navigationBarColor">@color/mogu_surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
     </style>
 
     <style name="Theme.Mogu" parent="Base.Theme.Mogu" />
