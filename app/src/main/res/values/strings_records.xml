@@ -15,4 +15,7 @@
     <string name="records_top3">Top3 候选</string>
     <string name="records_source">识别来源</string>
     <string name="records_feedback">反馈识别结果</string>
+    <string name="guest_records_title">登录后查看识别记录</string>
+    <string name="guest_records_desc">你的识别结果会保存在这里，登录后可以收藏、回看和反馈。</string>
+    <string name="guest_records_login">去登录</string>
 </resources>

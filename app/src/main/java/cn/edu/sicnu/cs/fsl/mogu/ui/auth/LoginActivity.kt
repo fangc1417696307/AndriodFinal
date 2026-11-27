@@ -4,12 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import cn.edu.sicnu.cs.fsl.mogu.R
 import cn.edu.sicnu.cs.fsl.mogu.ServiceLocator
 import cn.edu.sicnu.cs.fsl.mogu.databinding.ActivityLoginBinding
-import cn.edu.sicnu.cs.fsl.mogu.ui.main.MainActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -17,10 +17,20 @@ import kotlinx.coroutines.withContext
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
+    private val registerLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult(),
+    ) { result ->
+        if (result.resultCode == RESULT_OK) {
+            setResult(RESULT_OK)
+            finish()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (ServiceLocator.session.isLoggedIn) {
-            openMain()
+            setResult(RESULT_OK)
+            finish()
             return
         }
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -28,7 +38,14 @@ class LoginActivity : AppCompatActivity() {
 
         binding.btnLogin.setOnClickListener { login() }
         binding.tvGoRegister.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
+            registerLauncher.launch(
+                Intent(this, RegisterActivity::class.java)
+                    .putExtra(RegisterActivity.EXTRA_FROM_LOGIN, true),
+            )
+        }
+        binding.tvBrowse.setOnClickListener {
+            setResult(RESULT_CANCELED)
+            finish()
         }
     }
 
@@ -49,7 +66,8 @@ class LoginActivity : AppCompatActivity() {
             binding.progress.visibility = android.view.View.GONE
             binding.btnLogin.isEnabled = true
             result.onSuccess {
-                openMain()
+                setResult(RESULT_OK)
+                finish()
             }.onFailure {
                 Toast.makeText(
                     this@LoginActivity,
@@ -58,14 +76,6 @@ class LoginActivity : AppCompatActivity() {
                 ).show()
             }
         }
-    }
-
-    private fun openMain() {
-        startActivity(
-            Intent(this, MainActivity::class.java)
-                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK),
-        )
-        finish()
     }
 
     private fun hideKeyboard() {

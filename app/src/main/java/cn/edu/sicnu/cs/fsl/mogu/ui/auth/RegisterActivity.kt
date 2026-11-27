@@ -8,7 +8,6 @@ import androidx.lifecycle.lifecycleScope
 import cn.edu.sicnu.cs.fsl.mogu.R
 import cn.edu.sicnu.cs.fsl.mogu.ServiceLocator
 import cn.edu.sicnu.cs.fsl.mogu.databinding.ActivityRegisterBinding
-import cn.edu.sicnu.cs.fsl.mogu.ui.main.MainActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -22,7 +21,14 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnRegister.setOnClickListener { register() }
-        binding.tvGoLogin.setOnClickListener { finish() }
+        binding.tvGoLogin.setOnClickListener {
+            if (intent.getBooleanExtra(EXTRA_FROM_LOGIN, false)) {
+                setResult(RESULT_CANCELED)
+            } else {
+                startActivity(Intent(this, LoginActivity::class.java))
+            }
+            finish()
+        }
     }
 
     private fun register() {
@@ -46,10 +52,7 @@ class RegisterActivity : AppCompatActivity() {
             binding.btnRegister.isEnabled = true
             result.onSuccess {
                 Toast.makeText(this@RegisterActivity, R.string.register_success, Toast.LENGTH_SHORT).show()
-                startActivity(
-                    Intent(this@RegisterActivity, MainActivity::class.java)
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK),
-                )
+                setResult(RESULT_OK)
                 finish()
             }.onFailure {
                 Toast.makeText(
@@ -59,5 +62,9 @@ class RegisterActivity : AppCompatActivity() {
                 ).show()
             }
         }
+    }
+
+    companion object {
+        const val EXTRA_FROM_LOGIN = "from_login"
     }
 }

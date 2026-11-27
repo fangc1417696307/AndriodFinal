@@ -17,12 +17,18 @@ import kotlinx.coroutines.withContext
 
 class FeedbackActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFeedbackBinding
-    private val userId = ServiceLocator.session.userId
+    private val userId: Long
+        get() = ServiceLocator.session.userId
     private val adapter = FeedbackAdapter()
     private var recordId: Long? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (!ServiceLocator.session.isLoggedIn) {
+            Toast.makeText(this, R.string.feedback_login_required, Toast.LENGTH_SHORT).show()
+            finish()
+            return
+        }
         binding = ActivityFeedbackBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.tvBack.setOnClickListener { finish() }

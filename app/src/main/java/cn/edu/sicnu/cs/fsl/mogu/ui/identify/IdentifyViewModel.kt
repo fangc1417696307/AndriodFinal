@@ -17,12 +17,16 @@ data class IdentifyUiState(
 )
 
 class IdentifyViewModel : ViewModel() {
-    private val userId = ServiceLocator.session.userId
     private val _state = MutableStateFlow(IdentifyUiState())
     val state = _state.asStateFlow()
 
     fun identify(file: File) {
         if (_state.value.loading) return
+        val userId = ServiceLocator.session.userId
+        if (userId <= 0) {
+            _state.update { it.copy(error = "登录后才能识别并保存记录") }
+            return
+        }
         _state.update { it.copy(loading = true, error = null) }
         viewModelScope.launch {
             runCatching {

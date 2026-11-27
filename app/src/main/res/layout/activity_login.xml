@@ -96,9 +96,19 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/tvBrowse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="2dp"
+            android:padding="8dp"
+            android:text="@string/login_browse"
+            android:textColor="@color/mogu_text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:text="@string/login_demo_hint"
             android:textColor="@color/mogu_text_secondary"
             android:textSize="12sp" />

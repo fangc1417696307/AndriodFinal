@@ -50,5 +50,41 @@
             android:textColor="@color/mogu_text_secondary"
             android:textSize="14sp"
             android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/guestPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/guest_records_title"
+                android:textColor="@color/mogu_text_primary"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/guest_records_desc"
+                android:textColor="@color/mogu_text_secondary"
+                android:textSize="13sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGuestRecordsLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/guest_records_login" />
+        </LinearLayout>
     </FrameLayout>
 </LinearLayout>
