@@ -14,14 +14,11 @@
     <string name="register_username">用户名</string>
     <string name="register_password">密码（6-32 位）</string>
     <string name="register_confirm">确认密码</string>
-    <string name="register_real_name">姓名</string>
-    <string name="register_phone">手机号（可选）</string>
     <string name="register_button">注册并登录</string>
     <string name="register_to_login">已有账号？返回登录</string>
     <string name="register_error_username">请输入 3-20 位用户名</string>
     <string name="register_error_password">密码长度需为 6-32 位</string>
     <string name="register_error_confirm">两次输入的密码不一致</string>
-    <string name="register_error_real_name">请输入姓名</string>
     <string name="register_error_exists">用户名已存在</string>
     <string name="register_success">注册成功</string>
 

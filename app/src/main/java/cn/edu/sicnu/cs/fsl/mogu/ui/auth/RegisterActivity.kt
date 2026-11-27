@@ -35,8 +35,6 @@ class RegisterActivity : AppCompatActivity() {
         val username = binding.etUsername.text?.toString().orEmpty()
         val password = binding.etPassword.text?.toString().orEmpty()
         val confirm = binding.etConfirm.text?.toString().orEmpty()
-        val realName = binding.etRealName.text?.toString().orEmpty()
-        val phone = binding.etPhone.text?.toString()?.takeIf { it.isNotBlank() }
 
         if (password != confirm) {
             Toast.makeText(this, R.string.register_error_confirm, Toast.LENGTH_SHORT).show()
@@ -46,7 +44,7 @@ class RegisterActivity : AppCompatActivity() {
         binding.btnRegister.isEnabled = false
         lifecycleScope.launch {
             val result = withContext(Dispatchers.IO) {
-                ServiceLocator.authRepository.register(username, password, realName, phone)
+                ServiceLocator.authRepository.register(username, password)
             }
             binding.progress.visibility = android.view.View.GONE
             binding.btnRegister.isEnabled = true

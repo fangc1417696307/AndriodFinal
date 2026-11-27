@@ -23,21 +23,13 @@ class AuthRepository(
         return Result.success(user)
     }
 
-    suspend fun register(
-        username: String,
-        password: String,
-        realName: String,
-        phone: String?,
-    ): Result<UserEntity> {
+    suspend fun register(username: String, password: String): Result<UserEntity> {
         val name = username.trim()
         if (name.length !in 3..20) {
             return Result.failure(IllegalArgumentException("用户名需为 3-20 位"))
         }
         if (password.length !in 6..32) {
             return Result.failure(IllegalArgumentException("密码需为 6-32 位"))
-        }
-        if (realName.isBlank()) {
-            return Result.failure(IllegalArgumentException("请输入姓名"))
         }
         if (userDao.findByUsername(name) != null) {
             return Result.failure(IllegalArgumentException("用户名已存在"))
@@ -47,8 +39,8 @@ class AuthRepository(
             username = name,
             passwordHash = PasswordHasher.hash(password, salt),
             passwordSalt = salt,
-            realName = realName.trim(),
-            phone = phone?.trim()?.takeIf { it.isNotEmpty() },
+            // 注册只填用户名和密码，姓名先默认使用用户名，之后可在个人中心修改。
+            realName = name,
         )
         val id = userDao.insert(user)
         val saved = user.copy(userId = id)
